@@ -109,8 +109,8 @@ def ultrasonic_detection(TRIGGER, ECHO):
     signal_duration = end - start
     # рассчитаем расстояние до объекта
     distance = round(signal_duration * 17150, 2)
-    # если объект на расстоянии от 3 до 15 см
-
+    
+    # если объект обнаружен на расстоянии от 3 до 15 см
     if 3 < distance < 15:
         print("Замечено движение на расстоянии", distance, "см. от датчика.")
         # отправим уведомление в приложение IFTTT
