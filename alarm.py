@@ -27,7 +27,7 @@ def take_shots(number_of_shots):
     shots = []
     # цикл, который number_of_shots-раз сделает снимки с паузой 0.5 сек
     for i in range(number_of_shots):
-        # получим текущую дату и время без миллисекунд
+        # получим текущую дату и время без микросекунд
         time_of_the_crime = datetime.datetime.today().replace(microsecond=0)
         # присвоим снимку имя: текущая дата и время плюс расширение .jpg
         shot_name = str(time_of_the_crime) + '.jpg'
