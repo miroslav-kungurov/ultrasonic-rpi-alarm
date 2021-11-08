@@ -83,7 +83,8 @@ def setup_GPIO():
     GPIO.setup(ECHO, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
     return TRIGGER, ECHO
 
-
+# пауза после объявления пинов
+# без паузы датчик работает некорректно
 def pause(value):
     for i in range(value):
         print('Запуск через', value - i, 'сек.')
