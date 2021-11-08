@@ -36,7 +36,7 @@ def take_shots(number_of_shots):
         # сделаем снимок и сохраним его в папку shots под именем shot_name
         camera.capture(shot_path)
         print('Сделал снимок:', shot_name)
-        # добавим путь к снимку в список снимков shots
+        # добавим путь снимка в список снимков shots
         shots.append(shot_path)
         # пауза между снимками в секундах
         pause = 0.5
