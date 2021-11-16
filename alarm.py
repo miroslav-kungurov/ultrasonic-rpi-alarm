@@ -8,14 +8,11 @@ import os
 
 # функция, проверяющая наличие/создающая папку shots
 def create_shots_folder():
-    # если папка существует
-    if os.path.exists(os.path.join(os.getcwd(), 'shots')):
-        # то ничего не делать
-        pass
-    # если папки нет
-    else:
+    # если папки не существует
+    if not os.path.exists(os.path.join(os.getcwd(), 'shots')):
         # то создать папку shots в текущем каталоге
         os.mkdir('shots')
+        
 
 # функция, управляющая камерой
 def take_shots(number_of_shots):
