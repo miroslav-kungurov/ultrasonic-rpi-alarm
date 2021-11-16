@@ -8,7 +8,7 @@ import os
 
 # функция, проверяющая наличие/создающая папку shots
 def create_shots_folder():
-    # если shots папки не существует
+    # если папки shots не существует
     if not os.path.exists(os.path.join(os.getcwd(), 'shots')):
         # то создать папку shots в текущем каталоге
         os.mkdir('shots')
